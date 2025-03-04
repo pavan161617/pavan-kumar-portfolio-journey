@@ -20,7 +20,7 @@ const About = () => {
   // Function to handle resume download
   const handleResumeDownload = () => {
     // Create a temporary link to download the resume
-    const resumeUrl = "https://drive.google.com/uc?export=download&id=1mtXPA3LXlqyF5U2fCnU9gOsb-ewOBk0s";
+    const resumeUrl = "https://drive.google.com/file/d/1hTgwRFt5x87KVxxn3evmbPaQ7cSkaqs2/view?usp=sharing";
     
     // Open the URL in a new tab
     window.open(resumeUrl, '_blank', 'noopener,noreferrer');

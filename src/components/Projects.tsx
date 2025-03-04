@@ -17,6 +17,7 @@ const Projects = () => {
         "Integrated collaborative filtering techniques, refining prediction accuracy by 18%"
       ],
       link: "GitHub",
+      githubUrl: "https://github.com/pavan161617/movie-recommendations-system",
       technologies: ["Python", "Scikit-learn", "Data Mining", "Machine Learning"]
     },
     {
@@ -28,6 +29,7 @@ const Projects = () => {
         "Logs 500+ Interactions – Tracks clicks, selections, and operations across multiple localhost instances to enhance user engagement"
       ],
       link: "GitHub",
+      githubUrl: "https://github.com/pavan161617/Data-Structure-Algorithm-and-Visulization",
       technologies: ["JavaScript", "HTML", "CSS", "Data Structures", "Algorithms"]
     }
   ];
@@ -75,7 +77,9 @@ const Projects = () => {
                   </div>
                   
                   <a 
-                    href="#" 
+                    href={project.githubUrl} 
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex items-center text-primary hover:underline"
                   >
                     View on {project.link} <ArrowRight className="ml-1 h-4 w-4" />

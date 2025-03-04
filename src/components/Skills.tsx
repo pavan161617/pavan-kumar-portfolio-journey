@@ -47,7 +47,7 @@ const Skills = () => {
         { 
           name: "Salesforce AI Associate", 
           date: "Oct 2024", 
-          link: "https://trailhead.salesforce.com/en/credentials/certification-detail-print/?searchString=Salesforce+AI+Associate" 
+          link: "https://drive.google.com/file/d/17Vikg6nDqu5i589YkQvqC1RMHX0k0M1z/view?usp=sharing" 
         }
       ]
     },
@@ -72,7 +72,7 @@ const Skills = () => {
         { 
           name: "Python Basics – HackerRank", 
           date: "Feb 2025", 
-          link: "https://www.hackerrank.com/certificates/frame/sample" 
+          link: "https://www.hackerrank.com/profile/22A31A43G6" 
         }
       ]
     }

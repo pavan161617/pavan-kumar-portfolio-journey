@@ -12,6 +12,7 @@ const Experience = () => {
       company: "EduSkills Academy",
       period: "Jul 2024 - Sep 2024",
       certificate: "Certificate",
+      certificateUrl: "https://drive.google.com/file/d/1lQ8gV45LKkJY1bsS8sVyhHNrd4tZ2aoZ/view?usp=sharing",
       type: "Virtual Internship",
       achievements: [
         "Constructed 10+ dynamic web applications with HTML, CSS, JavaScript, Flask, and SQL",
@@ -24,6 +25,7 @@ const Experience = () => {
       company: "VOIS",
       period: "Feb 2024 - Mar 2024",
       certificate: "Certificate",
+      certificateUrl: "https://drive.google.com/file/d/1SgwgMW8BDGuEYdEns64gsk4iWQxZYdQe/view?usp=sharing",
       type: "Virtual Internship",
       achievements: [
         "Engineered interactive Power BI dashboards, boosting visualization clarity by 30%",
@@ -36,6 +38,7 @@ const Experience = () => {
       company: "",
       period: "Aug 2023 - Oct 2023",
       certificate: "Certificate",
+      certificateUrl: "https://drive.google.com/file/d/1zRqnGWAMKRsgJo62WqE0Jo8PXDhY9p6q/view?usp=sharing",
       type: "Virtual Internship",
       achievements: [
         "Streamlined Apex Debugging, Process Automation, and LWC API, reducing debugging time by 30%",
@@ -73,7 +76,16 @@ const Experience = () => {
                   </div>
                   <div className="mt-4 md:mt-0 md:text-right">
                     <p className="font-medium">{internship.period}</p>
-                    <a href="#" className="text-primary hover:underline">
+                    <a 
+                      href={internship.certificateUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        window.open(internship.certificateUrl, '_blank', 'noopener,noreferrer');
+                      }}
+                      className="text-primary hover:underline"
+                    >
                       {internship.certificate}
                     </a>
                   </div>

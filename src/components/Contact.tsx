@@ -1,4 +1,3 @@
-
 import { useScrollReveal } from '@/hooks/useScrollReveal';
 
 const Contact = () => {
@@ -18,10 +17,10 @@ const Contact = () => {
   ];
   
   const socialLinks = [
-    { name: "LinkedIn", url: "#" },
-    { name: "GitHub", url: "#" },
-    { name: "LeetCode", url: "#" },
-    { name: "HackerRank", url: "#" },
+    { name: "LinkedIn", url: "https://www.linkedin.com/in/pavan-kumar-b7639125a/" },
+    { name: "GitHub", url: "https://github.com/pavan161617" },
+    { name: "LeetCode", url: "https://leetcode.com/u/Pavan_kumar_16/" },
+    { name: "HackerRank", url: "https://www.hackerrank.com/profile/22A31A43G6" },
   ];
 
   return (
@@ -66,6 +65,8 @@ const Contact = () => {
                   <a
                     key={index}
                     href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="btn-outline text-center py-2"
                     style={{ animationDelay: `${index * 100}ms` }}
                   >
