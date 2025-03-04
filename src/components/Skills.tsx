@@ -1,5 +1,6 @@
 
 import { useScrollReveal } from '@/hooks/useScrollReveal';
+import { Code, Database, FileText, Film, Settings, Terminal } from 'lucide-react';
 
 const Skills = () => {
   const headingRef = useScrollReveal<HTMLHeadingElement>({
@@ -9,26 +10,32 @@ const Skills = () => {
   const skillCategories = [
     {
       category: "Programming Languages",
+      icon: <Terminal className="h-5 w-5 text-primary" />,
       skills: ["Python", "Data Structures & Algorithms"]
     },
     {
       category: "AI & Machine Learning",
+      icon: <Settings className="h-5 w-5 text-primary" />,
       skills: ["Data Mining", "Machine Learning", "Generative AI"]
     },
     {
       category: "Frameworks & Libraries",
+      icon: <Code className="h-5 w-5 text-primary" />,
       skills: ["NumPy", "Pandas", "Matplotlib"]
     },
     {
       category: "Development Tools",
+      icon: <FileText className="h-5 w-5 text-primary" />,
       skills: ["Jupyter Notebook", "Google Colab", "Power BI", "Streamlit"]
     },
     {
       category: "Databases",
+      icon: <Database className="h-5 w-5 text-primary" />,
       skills: ["SQL", "DBMS"]
     },
     {
       category: "Web Technologies",
+      icon: <Film className="h-5 w-5 text-primary" />,
       skills: ["HTML", "CSS", "JavaScript", "Flask"]
     }
   ];
@@ -37,16 +44,16 @@ const Skills = () => {
     {
       type: "Global Certifications",
       items: [
-        { name: "Salesforce AI Associate", date: "Oct 2024", link: "Certificate" }
+        { name: "Salesforce AI Associate", date: "Oct 2024", link: "https://drive.google.com/file/d/example1/view" }
       ]
     },
     {
       type: "Other Certifications",
       items: [
-        { name: "NPTEL Python for Data Science (NPTEL)", date: "Sept 2024", link: "Certificate" },
-        { name: "Introduction to Data Science with Python (edX)", date: "Apr 2024", link: "Certificate" },
-        { name: "Machine Learning using Python & Scikit-Learn Bootcamp", date: "Jan 2023", link: "Certificate" },
-        { name: "Python Basics – HackerRank", date: "Feb 2025", link: "Certificate" }
+        { name: "NPTEL Python for Data Science (NPTEL)", date: "Sept 2024", link: "https://drive.google.com/file/d/example2/view" },
+        { name: "Introduction to Data Science with Python (edX)", date: "Apr 2024", link: "https://drive.google.com/file/d/example3/view" },
+        { name: "Machine Learning using Python & Scikit-Learn Bootcamp", date: "Jan 2023", link: "https://drive.google.com/file/d/example4/view" },
+        { name: "Python Basics – HackerRank", date: "Feb 2025", link: "https://drive.google.com/file/d/example5/view" }
       ]
     }
   ];
@@ -71,13 +78,16 @@ const Skills = () => {
                   });
                   
                   return (
-                    <div key={index} ref={categoryRef}>
-                      <h4 className="font-semibold mb-3">{category.category}</h4>
-                      <div className="flex flex-wrap gap-2">
+                    <div key={index} ref={categoryRef} className="animate-fade-in" style={{ animationDelay: `${index * 100}ms` }}>
+                      <div className="flex items-center gap-2 mb-3">
+                        {category.icon}
+                        <h4 className="font-semibold">{category.category}</h4>
+                      </div>
+                      <div className="grid grid-cols-2 gap-2">
                         {category.skills.map((skill, i) => (
                           <div 
                             key={i} 
-                            className="chip bg-primary/10 text-primary-foreground border border-primary/20"
+                            className="chip bg-primary/10 text-primary border border-primary/20 hover:bg-primary/20 transition-colors flex items-center justify-center"
                             style={{ animationDelay: `${i * 100}ms` }}
                           >
                             {skill}
@@ -103,13 +113,13 @@ const Skills = () => {
                   });
                   
                   return (
-                    <div key={index} ref={certTypeRef}>
+                    <div key={index} ref={certTypeRef} className="animate-fade-in" style={{ animationDelay: `${index * 100}ms` }}>
                       <h4 className="font-semibold mb-3">{certType.type}</h4>
                       <div className="space-y-4">
                         {certType.items.map((cert, i) => (
                           <div 
                             key={i} 
-                            className="flex justify-between items-center border-b pb-2"
+                            className="flex justify-between items-center border-b pb-2 hover:bg-secondary/50 p-2 rounded transition-colors"
                             style={{ animationDelay: `${i * 100}ms` }}
                           >
                             <div>
@@ -117,10 +127,12 @@ const Skills = () => {
                               <p className="text-sm text-muted-foreground">{cert.date}</p>
                             </div>
                             <a 
-                              href="#" 
-                              className="text-primary hover:underline text-sm"
+                              href={cert.link}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-primary hover:underline text-sm flex items-center gap-1"
                             >
-                              {cert.link}
+                              View Certificate
                             </a>
                           </div>
                         ))}
@@ -131,36 +143,6 @@ const Skills = () => {
               </div>
             </div>
           </div>
-        </div>
-        
-        <div 
-          className="mt-10 glass-card p-6 md:p-8 rounded-xl bg-white/95 shadow-md"
-          ref={useScrollReveal<HTMLDivElement>({
-            origin: 'bottom',
-            delay: 300,
-          })}
-        >
-          <h3 className="text-xl font-bold mb-4">Interests</h3>
-          <ul className="space-y-2">
-            <li className="flex items-start">
-              <span className="inline-block h-1.5 w-1.5 bg-primary rounded-full mt-2 mr-2"></span>
-              <span>
-                Focused on Artificial Intelligence, Machine Learning, and their real-world applications in automation and decision-making.
-              </span>
-            </li>
-            <li className="flex items-start">
-              <span className="inline-block h-1.5 w-1.5 bg-primary rounded-full mt-2 mr-2"></span>
-              <span>
-                Building scalable web applications using frameworks like React, Flask, and TensorFlow.js to optimize performance.
-              </span>
-            </li>
-            <li className="flex items-start">
-              <span className="inline-block h-1.5 w-1.5 bg-primary rounded-full mt-2 mr-2"></span>
-              <span>
-                Active participant in tech communities and hackathons.
-              </span>
-            </li>
-          </ul>
         </div>
       </div>
     </section>

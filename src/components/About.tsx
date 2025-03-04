@@ -1,5 +1,6 @@
 
 import { useScrollReveal } from '@/hooks/useScrollReveal';
+import { FileText } from 'lucide-react';
 
 const About = () => {
   const headingRef = useScrollReveal<HTMLHeadingElement>({
@@ -32,10 +33,19 @@ const About = () => {
                 at Pragati Engineering College. My passion lies in creating effective AI solutions
                 and developing web applications that solve real-world problems.
               </p>
-              <p className="text-lg">
+              <p className="text-lg mb-6">
                 With expertise in Python, Data Structures, Machine Learning and Web Development,
                 I strive to build innovative solutions that make a difference.
               </p>
+              
+              <a 
+                href="https://drive.google.com/file/d/yourgdriveresumelink/view" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="btn-primary inline-flex items-center gap-2"
+              >
+                <FileText className="h-4 w-4" /> Download Resume
+              </a>
             </div>
           </div>
           
