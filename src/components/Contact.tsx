@@ -1,3 +1,4 @@
+
 import { useScrollReveal } from '@/hooks/useScrollReveal';
 
 const Contact = () => {
@@ -83,7 +84,10 @@ const Contact = () => {
                 <h4 className="text-lg font-semibold">Ready to work together?</h4>
                 <p className="text-muted-foreground">Let's discuss your project</p>
               </div>
-              <a href="mailto:pavan90990@gmail.com" className="btn-primary text-center">
+              <a 
+                href="mailto:pavan90990@gmail.com" 
+                className="btn-primary text-center"
+              >
                 Send an Email
               </a>
             </div>

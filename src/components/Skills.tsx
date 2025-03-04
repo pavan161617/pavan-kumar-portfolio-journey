@@ -55,24 +55,24 @@ const Skills = () => {
       type: "Other Certifications",
       items: [
         { 
-          name: "NPTEL Python for Data Science (NPTEL)", 
+          name: "NPTEL Python for Data Science", 
           date: "Sept 2024", 
-          link: "https://archive.nptel.ac.in/noc/Ecertificate/?q=NPTEL22CS83S33381001910040989" 
+          link: "https://drive.google.com/file/d/1vXBy-MhKHqR-y96gX-Jamc0zhCpjrd76/view?usp=sharing" 
         },
         { 
           name: "Introduction to Data Science with Python (edX)", 
           date: "Apr 2024", 
-          link: "https://courses.edx.org/certificates/e67e5aca11ae47c5baad28d9f1d8471f" 
+          link: "https://drive.google.com/file/d/1kTOW-xeotV-WMKEq4PAE4ANqeE5qxho6/view?usp=sharing" 
         },
         { 
           name: "Machine Learning using Python & Scikit-Learn Bootcamp", 
           date: "Jan 2023", 
-          link: "https://www.udemy.com/certificate/UC-123456789/" 
+          link: "https://drive.google.com/file/d/1FWc8Wtd6_QKkG8YL5qt3NYvmZyIJ1WCM/view?usp=sharing" 
         },
         { 
           name: "Python Basics – HackerRank", 
           date: "Feb 2025", 
-          link: "https://www.hackerrank.com/profile/22A31A43G6" 
+          link: "https://drive.google.com/file/d/1ka1M_-SS0kkv5OX3o8kBlIyAVeL_eg6V/view?usp=sharing" 
         }
       ]
     }
@@ -151,10 +151,6 @@ const Skills = () => {
                               target="_blank"
                               rel="noopener noreferrer"
                               className="text-primary hover:underline text-sm flex items-center gap-1"
-                              onClick={(e) => {
-                                e.preventDefault();
-                                window.open(cert.link, '_blank', 'noopener,noreferrer');
-                              }}
                             >
                               View Certificate
                             </a>
