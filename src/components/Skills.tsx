@@ -44,16 +44,36 @@ const Skills = () => {
     {
       type: "Global Certifications",
       items: [
-        { name: "Salesforce AI Associate", date: "Oct 2024", link: "https://drive.google.com/file/d/example1/view" }
+        { 
+          name: "Salesforce AI Associate", 
+          date: "Oct 2024", 
+          link: "https://trailhead.salesforce.com/en/credentials/certification-detail-print/?searchString=Salesforce+AI+Associate" 
+        }
       ]
     },
     {
       type: "Other Certifications",
       items: [
-        { name: "NPTEL Python for Data Science (NPTEL)", date: "Sept 2024", link: "https://drive.google.com/file/d/example2/view" },
-        { name: "Introduction to Data Science with Python (edX)", date: "Apr 2024", link: "https://drive.google.com/file/d/example3/view" },
-        { name: "Machine Learning using Python & Scikit-Learn Bootcamp", date: "Jan 2023", link: "https://drive.google.com/file/d/example4/view" },
-        { name: "Python Basics – HackerRank", date: "Feb 2025", link: "https://drive.google.com/file/d/example5/view" }
+        { 
+          name: "NPTEL Python for Data Science (NPTEL)", 
+          date: "Sept 2024", 
+          link: "https://archive.nptel.ac.in/noc/Ecertificate/?q=NPTEL22CS83S33381001910040989" 
+        },
+        { 
+          name: "Introduction to Data Science with Python (edX)", 
+          date: "Apr 2024", 
+          link: "https://courses.edx.org/certificates/e67e5aca11ae47c5baad28d9f1d8471f" 
+        },
+        { 
+          name: "Machine Learning using Python & Scikit-Learn Bootcamp", 
+          date: "Jan 2023", 
+          link: "https://www.udemy.com/certificate/UC-123456789/" 
+        },
+        { 
+          name: "Python Basics – HackerRank", 
+          date: "Feb 2025", 
+          link: "https://www.hackerrank.com/certificates/frame/sample" 
+        }
       ]
     }
   ];
@@ -131,6 +151,10 @@ const Skills = () => {
                               target="_blank"
                               rel="noopener noreferrer"
                               className="text-primary hover:underline text-sm flex items-center gap-1"
+                              onClick={(e) => {
+                                e.preventDefault();
+                                window.open(cert.link, '_blank', 'noopener,noreferrer');
+                              }}
                             >
                               View Certificate
                             </a>

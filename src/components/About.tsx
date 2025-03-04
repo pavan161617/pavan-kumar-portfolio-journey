@@ -17,6 +17,15 @@ const About = () => {
     delay: 400,
   });
 
+  // Function to handle resume download
+  const handleResumeDownload = () => {
+    // Create a temporary link to download the resume
+    const resumeUrl = "https://drive.google.com/uc?export=download&id=1mtXPA3LXlqyF5U2fCnU9gOsb-ewOBk0s";
+    
+    // Open the URL in a new tab
+    window.open(resumeUrl, '_blank', 'noopener,noreferrer');
+  };
+
   return (
     <section id="about" className="py-20 bg-secondary/50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -38,14 +47,12 @@ const About = () => {
                 I strive to build innovative solutions that make a difference.
               </p>
               
-              <a 
-                href="https://drive.google.com/file/d/yourgdriveresumelink/view" 
-                target="_blank" 
-                rel="noopener noreferrer" 
+              <button 
+                onClick={handleResumeDownload}
                 className="btn-primary inline-flex items-center gap-2"
               >
                 <FileText className="h-4 w-4" /> Download Resume
-              </a>
+              </button>
             </div>
           </div>
           
