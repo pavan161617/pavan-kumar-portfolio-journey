@@ -25,7 +25,7 @@ const Experience = () => {
       company: "VOIS",
       period: "Feb 2024 - Mar 2024",
       certificate: "Certificate",
-      certificateUrl: "https://drive.google.com/file/d/1SgwgMW8BDGuEYdEns64gsk4iWQxZYdQe/view?usp=sharing",
+      certificateUrl: "https://drive.google.com/file/d/1w_F4-Fk8o7AQP25w45B1Hyn_t4gbEaGd/view?usp=sharing",
       type: "Virtual Internship",
       achievements: [
         "Engineered interactive Power BI dashboards, boosting visualization clarity by 30%",
