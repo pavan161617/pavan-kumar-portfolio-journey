@@ -60,7 +60,7 @@ npm start  # If it's a ReactJS project
 - 🔹 Expand project list with cutting-edge AI/ML applications.  
 
 ## 🤝 Let's Connect
-**🌐 Portfolio:** [pavankumar.dev](https://pavankumar.dev)  
+**🌐 Portfolio:** [Pavan Kumar](https://67cc066c67df74ab985a7003--velvety-praline-a0bfdb.netlify.app/)  
 **🔗 LinkedIn:** [Pavan Kumar](https://www.linkedin.com/in/pavan-kumar-b7639125a/)  
 **📧 Email:** [your-email@example.com](mailto:pavan90990@gmail.com)  
 
