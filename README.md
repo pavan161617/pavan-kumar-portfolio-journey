@@ -1,69 +1,67 @@
-# Welcome to your Lovable project
+# 🚀 Pavan Kumar's Portfolio Journey
 
-## Project info
+Welcome to my personal portfolio repository! This is a showcase of my journey in software development, AI/ML, and web technologies. Explore my projects, skills, certifications, and contributions.
 
-**URL**: https://lovable.dev/projects/c0436ae7-f4ab-4aef-a246-6d08c8110784
+## 🎯 About Me
+👨‍💻 **Aspiring Software Developer** specializing in **AI, ML, and Full-Stack Development**.  
+🎓 **B.Tech Computer Science (AI)** - Pragati Engineering College (Graduating 2026).  
+🏆 Certified in **Python, Machine Learning, and Salesforce AI**.  
+💡 Passionate about problem-solving, open-source contributions, and tech innovations.  
 
-## How can I edit this code?
+## 🛠 Tech Stack
+🔹 **Programming:** Python, JavaScript, SQL  
+🔹 **Frontend:** HTML, CSS, ReactJS  
+🔹 **Backend:** Flask, Streamlit  
+🔹 **Database:** MySQL, PostgreSQL  
+🔹 **AI/ML:** Pandas, NumPy, Scikit-learn  
+🔹 **Tools:** Git, Power BI, TensorFlow  
 
-There are several ways of editing your application.
+## 📂 Project Highlights
+### 1️⃣ **Movie Recommendation System** 🎥  
+🔹 ML-based personalized movie recommendations.  
+🔹 Content & collaborative filtering techniques.  
+🔹 [GitHub Repo](https://github.com/pavan161617/movie-recommendations-system)  
 
-**Use Lovable**
+### 2️⃣ **E-Commerce Website** 🛒  
+🔹 Full-stack web application for online shopping.  
+🔹 Secure authentication & payment integration.  
+🔹 [GitHub Repo](https://github.com/pavan161617/e-commerce-project)  
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/c0436ae7-f4ab-4aef-a246-6d08c8110784) and start prompting.
+### 3️⃣ **AI-Based Sky Map** 🌌  
+🔹 Augmented Reality application for star mapping.  
+🔹 Real-time celestial object tracking.  
+🔹 [GitHub Repo](https://github.com/pavan161617/sky-map-ar)  
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🌟 Certifications
+✅ **Python for Data Science** (NPTEL)  
+✅ **Machine Learning using Python**  
+✅ **Salesforce AI & Developer Super Set**  
 
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+## 🔧 Setup & Running Locally
+1️⃣ Clone the repository:  
+```bash
+git clone https://github.com/pavan161617/pavan-kumar-portfolio-journey.git  
+cd pavan-kumar-portfolio-journey  
+```
+2️⃣ Install dependencies (if required):  
+```bash
+pip install -r requirements.txt  # For Python-based projects  
+npm install  # For frontend projects  
+```
+3️⃣ Run the project:  
+```bash
+streamlit run app.py  # If it's a Streamlit app  
+npm start  # If it's a ReactJS project  
 ```
 
-**Edit a file directly in GitHub**
+## 📜 Future Plans
+- 🔹 Improve UI/UX for better accessibility.  
+- 🔹 Integrate blog section for tech write-ups.  
+- 🔹 Expand project list with cutting-edge AI/ML applications.  
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🤝 Let's Connect
+**🌐 Portfolio:** [pavankumar.dev](https://pavankumar.dev)  
+**🔗 LinkedIn:** [Pavan Kumar](https://www.linkedin.com/in/pavan-kumar-b7639125a/)  
+**📧 Email:** [your-email@example.com](mailto:pavan90990@gmail.com)  
 
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with .
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/c0436ae7-f4ab-4aef-a246-6d08c8110784) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+⭐ *If you like my journey, please star this repository!* ⭐
